@@ -6,11 +6,13 @@ import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import BookingAndContact from './components/BookingAndContact.tsx';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
     return (
         <div className="min-h-screen">
-            <Analytics />
+            <Analytics/>
+            <SpeedInsights/>
             <Helmet>
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
                 <title>강남 자동차 에어컨 수리 | 강남 카 에어컨</title>
